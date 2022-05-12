@@ -1,0 +1,53 @@
+<div style="width: 700px;">
+  <form action="/create-car" method="post">
+    <div class="mb-3 row">
+      <label for="nama" class="col-sm-2 col-form-label">Nama</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="nama" name="nama">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="harga" class="col-sm-2 col-form-label">Harga</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="harga" name="harga">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="ukuran" class="col-sm-2 col-form-label">Ukuran</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="ukuran" name="ukuran">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="foto" class="col-sm-2 col-form-label">Foto</label>
+      <div class="col-sm-10">
+        <input type="file" class="form-control" id="foto" name="foto">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="startrent" class="col-sm-2 col-form-label">Start Rent</label>
+      <div class="col-sm-10">
+        <input type="date" class="form-control" id="startrent" name="startrent">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="finishrent" class="col-sm-2 col-form-label">Finish Rent</label>
+      <div class="col-sm-10">
+        <input type="date" class="form-control" id="finishrent" name="finishrent">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="created_at" class="col-sm-2 col-form-label">Created At</label>
+      <div class="col-sm-10">
+        <input type="hidden" class="form-control" id="created_at" name="created_at">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="updated_at" class="col-sm-2 col-form-label">Updated At</label>
+      <div class="col-sm-10">
+        <input type="hidden" class="form-control" id="updated_at" name="updated_at">
+      </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Simpan</button>
+  </form>
+</div>

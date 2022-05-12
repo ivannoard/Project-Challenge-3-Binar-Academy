@@ -1,0 +1,36 @@
+<table id="example" class="table table-striped" style="width:100%">
+  <thead>
+    <tr>
+      <th>Nama</th>
+      <th>Ukuran</th>
+      <th>Harga</th>
+      <th>Start Rent</th>
+      <th>Finish Rent</th>
+      <th>Created At</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% data.forEach(item=> { %>
+      <tr>
+        <td>
+          <%= item.nama %>
+        </td>
+        <td>
+          <%= item.ukuran %>
+        </td>
+        <td>
+          <%= item.harga %>
+        </td>
+        <td>
+          <%= item.startrent %>
+        </td>
+        <td>
+          <%= item.finishrent %>
+        </td>
+        <td>
+          <%= item.created_at %>
+        </td>
+      </tr>
+      <%}) %>
+  </tbody>
+</table>

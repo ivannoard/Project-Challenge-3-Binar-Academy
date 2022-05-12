@@ -1,0 +1,33 @@
+.w-20{
+  width:20%;
+}
+.w-80{
+  width:80%;
+}
+.box-left{
+  width:30px;
+  height:30px;
+}
+.link{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.dataTables_filter{
+  text-align: right;
+}
+.paginate_button{
+  padding: 5px 6px;
+  background-color: #0D28A6;
+  text-decoration: none;
+  color: white;
+}
+.paginate_button:hover{
+  color: white
+}
+.dataTables_length,.dataTables_info{
+  display: none;
+}
+.dataTables_paginate, .paging_simple_numbers{
+  text-align: right;
+}

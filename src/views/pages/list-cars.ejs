@@ -1,0 +1,38 @@
+<div class="list-cars">
+  <div class="top w-100 d-flex justify-content-between">
+    <h3>List Cars</h3>
+    <a href="/create-car" class="btn btn-primary">Create Cars</a>
+  </div>
+  <div class="center">
+    <div class="buttons">
+      <button class="btn btn-outline-primary">All</button>
+      <button class="btn btn-outline-primary">Large</button>
+      <button class="btn btn-outline-primary">Medium</button>
+      <button class="btn btn-outline-primary">Small</button>
+    </div>
+  </div>
+  <div class="bottom mt-3">
+    <div class="cards-container d-flex gap-2 flex-wrap">
+      <% data.forEach(item=>{ %>
+        <div class="card" style="width: 18rem;">
+          <img src="images/car.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">
+              <%=item.nama%>/<%=item.ukuran%>
+            </h5>
+            <p class="card-text">Rp.<%=item.harga%>
+            </p>
+            <p class="card-text">Start Rent : <%=item.startrent%>
+            </p>
+            <p class="card-text">Finish Rent <%=item.finishrent%>
+            </p>
+            <div class="buttons d-flex gap-2">
+              <a href=<%=`/edit-car/${item.id}`%> class="btn btn-warning w-100">Edit</a>
+              <a href=<%=`/delete-car/${item.id}`%> class="btn btn-danger w-100">Delete</a>
+            </div>
+          </div>
+        </div>
+        <%}) %>
+    </div>
+  </div>
+</div>
